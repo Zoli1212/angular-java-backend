@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @SpringBootApplication
 @EnableAsync
 @Import(SwaggerConfiguration.class)
-@PropertySource("classpath:application-${spring.profiles.active:dev}.properties")
+@PropertySource("classpath:application-${spring.profiles.active:prod}.properties")
 public class SocialSiteAngularApplication {
 
     public static void main(String[] args) {
